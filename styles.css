@@ -1,10 +1,17 @@
 /* Website styles */
+html {
+    height: 100vh;
+}
 
 body {
     margin: 0;
     background:#212529;
     font-family: 'Rajdhani', sans-serif;
     color: white;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0) 50%, rgba(0, 0, 0, 1) 100%), url("background-image.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: black;
 }
 
 nav {
@@ -12,7 +19,7 @@ nav {
     text-align: center;
     height: 50px;
     line-height: 50px;
-    background-color: #191c1f;
+    background-color: #1f1919;
 }
 
 nav > li {
@@ -39,13 +46,15 @@ main {
 .middle {
     border-radius: 5px;
     background-color: #2a3035;
-    width: 650px;
+    width: auto;
+    max-width: 600px;
     margin: 0 auto;
 }
 .result {
     border-radius: 5px;
     background-color: #2a3035;
-    width: 1200px;
+    max-width: 1459px;
+    width: auto;
     height: auto;
     margin: 0 auto;
 }

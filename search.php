@@ -9,7 +9,7 @@ class TableRows extends RecursiveIteratorIterator
 
     function current()
     {
-        return "<td style='width:150px;border:1px solid black;'>" . parent::current() . "</td>";
+        return "<td style='min-width:2px;border:1px solid black;word-break: break-all;'>" . parent::current() . "</td>";
     }
 
     function beginChildren()
@@ -70,7 +70,7 @@ for ($i = 0;$i < 10;$i++)
 $where = substr($where, 4);
 
 //echo website html
-echo '<!DOCTYPE html> <head> <link rel="stylesheet" href="styles.css"> <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,500,700&display=swap" rel="stylesheet"> </head> <html> <body> <nav> <!-- <li><img height="50px" src="websitelogo.png" ></li> --> <li><a href="index.php">HOME</a></li> <li><a href="search_movie.php">SEARCH</a></li> <li><a href="add_movie.php">ADD</a></li> </nav> <main> <div class="result">';
+echo '<!DOCTYPE html> <head> <link rel="stylesheet" href="styles.css"> <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,500,700&display=swap" rel="stylesheet"> </head> <html> <body style="background-size: 100vw 100vh"> <nav> <!-- <li><img height="50px" src="websitelogo.png" ></li> --> <li><a href="index.php">HOME</a></li> <li><a href="search_movie.php">SEARCH</a></li> <li><a href="add_movie.php">ADD</a></li> </nav> <main> <div class="result">';
 echo "<table style=''>";
 echo "<tr><th>Id</th><th>Title</th><th>Studio</th><th>Status</th><th>Sound</th><th>Versions</th><th>RecRetPrice</th><th>Rating</th><th>Year</th><th>Genre</th><th>Aspect</th><th>Searched Count</th></tr>";
 

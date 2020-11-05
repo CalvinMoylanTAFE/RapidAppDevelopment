@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,500,700&display=swap" rel="stylesheet">
     </head>
 <html>
-    <body>
+    <body style="background-size: cover;">
         <!-- Including the nav bar -->
         <?php
 include_once ('include/nav.php');
