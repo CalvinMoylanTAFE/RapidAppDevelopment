@@ -72,3 +72,6 @@ footer {
     height: 100px;
     margin: 0 auto;
 }
+table {
+    width: 100%;
+}
