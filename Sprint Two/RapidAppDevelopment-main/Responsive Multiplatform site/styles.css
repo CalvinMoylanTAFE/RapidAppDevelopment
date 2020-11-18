@@ -45,7 +45,7 @@ main {
 
 .middle {
     border-radius: 5px;
-    background-color: #2a3035;
+    background: rgba(0,0,0,0.8);
     width: auto;
     max-width: 600px;
     margin: 0 auto;
@@ -63,15 +63,26 @@ footer {
     background-color: #191c1f;
     bottom: 0;
     text-align: center;
-    height: 100px;
+    height: 50px;
 }
 
 .fmiddle {
     background-color: #1d2024;
-    width: 400px;
+    width: 800px;
     height: 100px;
     margin: 0 auto;
 }
 table {
     width: 100%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #FFFFFF;
+  padding: 10px;
+  color: #FFFFFF;
+  width: 100%;
 }
