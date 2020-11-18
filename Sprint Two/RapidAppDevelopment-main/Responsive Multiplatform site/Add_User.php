@@ -21,8 +21,10 @@
                            
                             //filter name field  
                             if (isset($_POST["fname"]) && isset($_POST["lname"]) && isset($_POST["email"])){
+
                                 
-                                $fname = test_input($_POST["fname"]);
+                                  
+                                  $fname = test_input($_POST["fname"]);
                                 if (!preg_match("/^[a-zA-Z]*$/",$fname)) {
                                   $nameErr = "Only letters ";
                                   echo $nameErr;
@@ -41,6 +43,7 @@
                                                     $emailErr = "Invalid email";
                                                     echo $emailErr;
                                                 } else{
+                                                  if(isset($_POST["NewsLetter"]) Or isset($_POST["NewsLetter"])){
    
                                                                       //SQL
                                                                       $stmt = $conn->prepare("SELECT * FROM `members` WHERE `Email` = '$email' ");
@@ -57,12 +60,17 @@
                                               
                                                                           $sql->execute();
                                                                           header("Location: Thank_youPage.php");
-                                                                      }    
+                                                                      }   
+                                                                    }else{
+                                                                      echo "Tick one of boxes";
+                                                                    } 
                                }
                                      
                                 }
 
                               }
+                                
+                                
 
                             }else{
                                 

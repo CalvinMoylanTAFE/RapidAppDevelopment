@@ -29,7 +29,7 @@
                 <input Name="id" class="input" Type="Text" placeholder="ID" >
                 <br>
 
-                <input Name="email" class="input" Type="Text" placeholder="Password" >           
+                <input Name="email" class="input" Type="Text" placeholder="Email" >           
                 
                 <?php
                             include 'admin.php';                                
