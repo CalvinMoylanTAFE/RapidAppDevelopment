@@ -53,7 +53,7 @@
                                                                           echo "Email already exists";
                                                                       }else{
                                                                               echo "";
-                                                                          $sql = $conn->prepare("INSERT INTO members(`FirstName`,`LastName`,`Email`) VALUES ('$fname','$lname','$email')");
+                                                                          $sql = $conn->prepare("INSERT INTO members(`FirstName`,`LastName`,`Email`,`Removal`) VALUES ('$fname','$lname','$email','No')");
                                               
                                                                           $sql->execute();
                                                                           header("Location: Thank_youPage.php");

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 16, 2020 at 08:35 PM
+-- Generation Time: Nov 18, 2020 at 10:31 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.31
 
@@ -48,21 +48,22 @@ INSERT INTO `adminmembers` (`ID`, `Email`) VALUES
 CREATE TABLE `members` (
   `FirstName` varchar(1000) NOT NULL,
   `LastName` varchar(1000) NOT NULL,
-  `Email` varchar(1000) NOT NULL
+  `Email` varchar(1000) NOT NULL,
+  `Removal` varchar(1000) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `members`
 --
 
-INSERT INTO `members` (`FirstName`, `LastName`, `Email`) VALUES
-('Jack', 'JackSon', 'Jack.Jacksong@cite.com'),
-('Panashe', 'Madakasi', 'pkmad06@gmail.com'),
-('Carl', 'Haricombe', 'TestEmail@justatest.com'),
-('Calcin', 'Moylan', 'TestEmail2@justatest.com'),
-('Joe', 'kenny', 'TestEmail3@justatest.com'),
-('Matt', 'Jyle', 'Fakename@notreal.com'),
-('Daniel', 'something', 'Fakename2@notreal.com');
+INSERT INTO `members` (`FirstName`, `LastName`, `Email`, `Removal`) VALUES
+('Jack', 'JackSon', 'Jack.Jacksong@cite.com', 'Yes'),
+('Carl', 'Haricombe', 'TestEmail@justatest.com', 'No'),
+('Calcin', 'Moylan', 'TestEmail2@justatest.com', 'No'),
+('Joe', 'kenny', 'TestEmail3@justatest.com', 'No'),
+('Matt', 'Jyle', 'Fakename@notreal.com', 'No'),
+('Daniel', 'something', 'Fakename2@notreal.com', 'No'),
+('Panashe', 'Madakasi', 'pkmad06@gmail.com', 'No');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
