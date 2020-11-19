@@ -36,7 +36,8 @@
 
                 <input type="checkbox" id="NewsLetter" name="NewsLetter" value="NewsLetter">
                 <label for="NewsLetter">NewsLetter</label><br>     
-                <input type="checkbox" id="bknews" name="NewsLetter" value="NewsLetter">
+
+                <input type="checkbox" id="bknews" name="bknews" value="bknews">
                 <label for="bknews">Breaking News</label><br>            
 
                 <input type="submit" name="submit" value="Subscribe" class="button" onclick="location.href = 'ShowAllUsers.php';" />

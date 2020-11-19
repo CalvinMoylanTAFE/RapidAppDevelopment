@@ -45,9 +45,9 @@
                                                 header("Location: AdminPageht.php");
                                                }else{
                                                        echo " not";
-                                                   $sql = $conn->prepare("INSERT INTO adminmembers(`ID`,`Email`) VALUES ('$name','$email')");
+                                                   
                        
-                                                   $sql->execute();
+                                                   
                                                    
                                                }    
                                }

@@ -43,10 +43,49 @@
                                                     $emailErr = "Invalid email";
                                                     echo $emailErr;
                                                 } else{
-                                                  if(isset($_POST["NewsLetter"]) Or isset($_POST["NewsLetter"])){
-   
-                                                                      //SQL
-                                                                      $stmt = $conn->prepare("SELECT * FROM `members` WHERE `Email` = '$email' ");
+                                                  if(isset($_POST["NewsLetter"]) Or isset($_POST["bknews"])){
+
+                                                    if(isset($_POST["NewsLetter"]) && isset($_POST["bknews"])){
+
+                                                    
+
+                                                              $stmt = $conn->prepare("SELECT * FROM `members` WHERE `Email` = '$email' ");
+                          
+                                                                      
+                                                              //sql statment is exequted
+                                                              $stmt->execute();
+                                              
+                                                              if($stmt->rowCount() > 0){
+                                                              echo "Email already exists";
+                                                              }else{
+                                                                  echo "";
+                                                              $sql = $conn->prepare("INSERT INTO members(`FirstName`,`LastName`,`Email`,`Removal`,`NewsLetter`,`BrkNews`) VALUES ('$fname','$lname','$email','No',1,1)");
+                                  
+                                                              $sql->execute();
+                                                              header("Location: Thank_youPage.php");
+                                                              }
+                                                    
+                                                    }elseif(isset($_POST["NewsLetter"])){
+
+                                                              $stmt = $conn->prepare("SELECT * FROM `members` WHERE `Email` = '$email' ");
+                          
+                                                                      
+                                                                      //sql statment is exequted
+                                                                      $stmt->execute();
+                                              
+                                                              if($stmt->rowCount() > 0){
+                                                              echo "Email already exists";
+                                                              }else{
+                                                                  echo "";
+                                                              $sql = $conn->prepare("INSERT INTO members(`FirstName`,`LastName`,`Email`,`Removal`,`NewsLetter`,`BrkNews`) VALUES ('$fname','$lname','$email','No',1,0)");
+                                  
+                                                              $sql->execute();
+                                                              header("Location: Thank_youPage.php");
+                                                              }  
+
+                                                    }elseif(isset($_POST["bknews"])){
+
+                                                        $stmt = $conn->prepare("SELECT * FROM `members` WHERE `Email` = '$email' ");
                           
                                                                       
                                                                       //sql statment is exequted
@@ -56,14 +95,20 @@
                                                                           echo "Email already exists";
                                                                       }else{
                                                                               echo "";
-                                                                          $sql = $conn->prepare("INSERT INTO members(`FirstName`,`LastName`,`Email`,`Removal`) VALUES ('$fname','$lname','$email','No')");
+                                                                          $sql = $conn->prepare("INSERT INTO members(`FirstName`,`LastName`,`Email`,`Removal`,`NewsLetter`,`BrkNews`) VALUES ('$fname','$lname','$email','No',0,1)");
                                               
                                                                           $sql->execute();
                                                                           header("Location: Thank_youPage.php");
-                                                                      }   
+                                                                      }  
+
+                                                    }
+   
+                                                                      //SQL
+                                                                       
                                                                     }else{
                                                                       echo "Tick one of boxes";
                                                                     } 
+                                                                  
                                }
                                      
                                 }
