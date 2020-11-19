@@ -5,7 +5,7 @@
 include_once 'connect.php';
 
 
-                        $sql = "SELECT `FirstName`,`LastName`,`Email`,`Removal` FROM `members` WHERE 1";
+                        $sql = "SELECT `FirstName`,`LastName`,`Email`,`Removal`,`NewsLetter`,`BrkNews` FROM `members` WHERE 1";
 
                         $results = $conn->query($sql);
 
@@ -20,6 +20,8 @@ include_once 'connect.php';
                                   <td> <font face="Arial">Last Name</font> </td> 
                                   <td> <font face="Arial">Email</font> </td> 
                                   <td> <font face="Arial">Request</font> </td> 
+                                  <td> <font face="Arial">NewsLetter</font> </td> 
+                                  <td> <font face="Arial">Breaking News</font> </td> 
                                   
                               </tr>';
                             while($row = $results->fetch_assoc()) {
@@ -28,12 +30,16 @@ include_once 'connect.php';
                               $db2 = $row["LastName"];
                               $db3 = $row["Email"];
                               $db4 = $row["Removal"];
+                              $db5 = $row["NewsLetter"];
+                              $db6 = $row["BrkNews"];
 
                                                 echo '<tr>
                                   <td>'.$db1.'</td>
                                   <td>'.$db2.'</td>
                                   <td>'.$db3.'</td>
                                   <td>'.$db4.'</td>
+                                  <td>'.$db5.'</td>
+                                  <td>'.$db6.'</td>
                                   
                               </tr>';
                             
