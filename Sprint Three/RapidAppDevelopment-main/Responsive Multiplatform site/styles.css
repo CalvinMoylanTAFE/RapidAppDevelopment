@@ -1,0 +1,133 @@
+/* Website styles */
+html {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    background:#212529;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0) 50%, rgba(0, 0, 0, 1) 100%), url("background-image.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: black;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: #1f1919;
+}
+
+nav > li {
+    display: inline;
+    margin: 0px 30px;
+}
+
+nav > li > a {
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: larger;
+
+    cursor: pointer;
+}
+nav > li > a:hover {
+    opacity: 0.7;
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.middle {
+    border-radius: 5px;
+    background: rgba(0,0,0,0.8);
+    width: auto;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px
+    
+    
+}
+.result {
+    border-radius: 5px;
+    background-color: #2a3035;
+    max-width: 1459px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: rgba(0,0,0,0.8);
+    bottom: 0;
+    text-align: center;
+    height: auto;
+    bottom: auto;
+}
+
+.fmiddle {
+    background-color:  rgba(0,0,0,0.8);
+    width: 800px;
+    height: 100px;
+    margin: 0 auto;
+}
+table {
+    width: 100%;
+}
+
+.input
+ {
+    
+  margin: 5px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #FFFFFF;
+  padding: 10px;
+  color: #FFFFFF;
+  width: 50%;
+}
+
+::placeholder{
+    color:#FFFFFF;
+    opacity: 1;
+  }
+
+.button{
+    background-color: #FFFFFF;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-size: 16px;
+    margin: 2px 17px;
+    cursor: pointer;
+}
+
+.top{
+    margin: auto;
+    width: 50%;
+    
+    padding: 10px;
+
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}

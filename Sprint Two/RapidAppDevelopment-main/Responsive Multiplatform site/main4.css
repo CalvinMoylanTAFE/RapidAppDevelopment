@@ -114,6 +114,20 @@ body{
   color: #FFFFFF;
 }
 
+footer {
+  background-color: rgba(0,0,0,0.8);
+  bottom: 0;
+  text-align: center;
+  height: auto;
+}
+
+.fmiddle {
+  background-color:  rgba(0,0,0,0.8);
+  width: 800px;
+  height: 100px;
+  margin: 0 auto;
+}
+
 
 
   

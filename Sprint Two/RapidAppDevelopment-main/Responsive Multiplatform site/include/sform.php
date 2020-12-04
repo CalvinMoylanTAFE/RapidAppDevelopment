@@ -4,30 +4,30 @@ echo '<div class="middle">
 <h1>Search Form</h1>
 <p>Fill out the form below to get a list of matching movies</p>
 <form action="search.php" method="POST">
-    <label for="title">Title:</label><br>
-    <input type="text" id="title" name="Title"><br>
-    <label for="studio">Studio:</label><br>
-    <input type="text" id="studio" name="Studio"><br>
-    <label for="status">Status:</label><br>
-    <input type="text" id="status" name="Status"><br>
-    <label for="sound">Sound:</label><br>
-    <input type="text" id="sound" name="Sound"><br>
-    <label for="versions">Versions:</label><br>
-    <input type="text" id="versions" name="Versions"><br>
-    <label for="recretprice">RecRetPrice:</label><br>
-    <input type="text" id="recretprice" name="RecRetPrice"><br>
-    <label for="rating">Rating:</label><br>
-    <input type="text" id="rating" name="Rating"><br>
-    <label for="year">Year:</label><br>
-    <input type="text" id="year" name="Year"><br>
-    <label for="genre">Genre:</label><br>
-    <input type="text" id="genre" name="Genre"><br>
-    <label for="aspect">Aspect:</label><br>
-    <input type="text" id="aspect" name="Aspect"><br>
+    
+    <input type="text" class="input" id="title" name="Title" placeholder="Title"><br>
+    
+    <input type="text" class="input" id="studio" name="Studio" placeholder="Studio"><br>
+    
+    <input type="text" class="input" id="status" name="Status" placeholder="Status"><br>
+    
+    <input type="text" class="input" id="sound" name="Sound" placeholder="Sound"><br>
+    
+    <input type="text" class="input" id="versions" name="Versions" placeholder="Versions"><br>
+    
+    <input type="text" class="input" id="recretprice" name="RecRetPrice" placeholder="RecRetPrice"><br>
+    
+    <input type="text" class="input" id="rating" name="Rating" placeholder="Rating"><br>
+    
+    <input type="text" class="input" id="year" name="Year" placeholder="Year"><br>
+    
+    <input type="text" class="input" id="genre" name="Genre" placeholder="Genre"><br>
+    
+    <input type="text" class="input" id="aspect" name="Aspect" placeholder="Aspect"><br>
     <input type="checkbox" id="graph" name="Graph" value="Yes">
     <label for="graph"> Show most searched? </label><br><br>
     * click submit without any inputs for all results <br>
-    <input type="submit" value="Submit">
+    <input type="submit" class="button" value="Submit">
   </form>
 </div>';
 ?>

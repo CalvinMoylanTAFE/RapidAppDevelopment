@@ -24,7 +24,7 @@
 
                 <form Name="Form1" class="input" method="post"  >
 
-                Signup for Subscription
+                <h1>Signup for Subscription</h1>
                 
                 <input Name="fname" class="input" Type="Text" placeholder="First Name" >
                 <br>
@@ -37,7 +37,7 @@
                 <input type="checkbox" id="NewsLetter" name="NewsLetter" value="NewsLetter">
                 <label for="NewsLetter">NewsLetter</label><br>     
 
-                <input type="checkbox" id="bknews" name="bknews" value="bknews">
+                <input type="checkbox" id="bknews" name="bknews" value="">
                 <label for="bknews">Breaking News</label><br>            
 
                 <input type="submit" name="submit" value="Subscribe" class="button" onclick="location.href = 'ShowAllUsers.php';" />

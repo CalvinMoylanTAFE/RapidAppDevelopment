@@ -29,7 +29,10 @@ nav > li {
 
 nav > li > a {
     color: white;
+    font-weight: normal;
     text-decoration: none;
+    font-size: larger;
+
     cursor: pointer;
 }
 nav > li > a:hover {
@@ -47,8 +50,11 @@ main {
     border-radius: 5px;
     background: rgba(0,0,0,0.8);
     width: auto;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
+    padding: 20px
+    
+    
 }
 .result {
     border-radius: 5px;
@@ -60,14 +66,15 @@ main {
 }
 
 footer {
-    background-color: #191c1f;
+    background-color: rgba(0,0,0,0.8);
     bottom: 0;
     text-align: center;
     height: auto;
+    bottom: auto;
 }
 
 .fmiddle {
-    background-color: #1d2024;
+    background-color:  rgba(0,0,0,0.8);
     width: 800px;
     height: 100px;
     margin: 0 auto;
@@ -76,13 +83,33 @@ table {
     width: 100%;
 }
 
-.input-fields .input,
-.msg textarea{
-  margin: 10px 0;
+.input
+ {
+    
+  margin: 5px 0;
   background: transparent;
   border: 0px;
   border-bottom: 2px solid #FFFFFF;
   padding: 10px;
   color: #FFFFFF;
-  width: 100%;
+  width: 50%;
+}
+
+::placeholder{
+    color:#FFFFFF;
+    opacity: 1;
+  }
+
+.button{
+    background-color: #FFFFFF;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-size: 16px;
+    margin: 2px 17px;
+    cursor: pointer;
 }
